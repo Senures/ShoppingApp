@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FA1FCC02B318079007EDDFE /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1FCBF2B318079007EDDFE /* TreeView.swift */; };
 		0FEAE2E22B2B0DA300D6581E /* ShoppingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAE2E12B2B0DA300D6581E /* ShoppingAppApp.swift */; };
 		0FEAE2E62B2B0DA500D6581E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FEAE2E52B2B0DA500D6581E /* Assets.xcassets */; };
 		0FEAE2E92B2B0DA500D6581E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FEAE2E82B2B0DA500D6581E /* Preview Assets.xcassets */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FA1FCBF2B318079007EDDFE /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
 		0FEAE2DE2B2B0DA300D6581E /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FEAE2E12B2B0DA300D6581E /* ShoppingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppApp.swift; sourceTree = "<group>"; };
 		0FEAE2E52B2B0DA500D6581E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +85,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F08DA1F2B39A5ED00497D67 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		0F08DA202B39A72700497D67 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				0FEAE30B2B2B242C00D6581E /* APIManager.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		0F08DA212B39A73100497D67 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				0FEAE30F2B2B2FD600D6581E /* ProductViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		0F08DA222B39A74300497D67 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0FEAE3112B2B5B9000D6581E /* ProductView.swift */,
+				0FEAE3192B2C836800D6581E /* ProductDetailsView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		0F08DA232B39A74C00497D67 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0FEAE30D2B2B2EFD00D6581E /* Product.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0F08DA242B39A7A800497D67 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				0FEAE3172B2C82D700D6581E /* Double+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		0FEAE2D52B2B0DA300D6581E = {
 			isa = PBXGroup;
 			children = (
@@ -110,18 +156,17 @@
 		0FEAE2E02B2B0DA300D6581E /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				0F08DA242B39A7A800497D67 /* extension */,
+				0F08DA232B39A74C00497D67 /* model */,
+				0F08DA222B39A74300497D67 /* views */,
+				0F08DA212B39A73100497D67 /* viewmodel */,
+				0F08DA202B39A72700497D67 /* network */,
+				0F08DA1F2B39A5ED00497D67 /* presentation */,
 				0FEAE2E12B2B0DA300D6581E /* ShoppingAppApp.swift */,
 				0FEAE2E52B2B0DA500D6581E /* Assets.xcassets */,
 				0FEAE2E72B2B0DA500D6581E /* Preview Content */,
-				0FEAE30B2B2B242C00D6581E /* APIManager.swift */,
-				0FEAE30D2B2B2EFD00D6581E /* Product.swift */,
-				0FEAE30F2B2B2FD600D6581E /* ProductViewModel.swift */,
-				0FEAE3112B2B5B9000D6581E /* ProductView.swift */,
 				0FEAE3132B2C778500D6581E /* ProductRowView.swift */,
 				0FEAE3152B2C80BD00D6581E /* AsyncImageView.swift */,
-				0FEAE3172B2C82D700D6581E /* Double+Extension.swift */,
-				0FEAE3192B2C836800D6581E /* ProductDetailsView.swift */,
-				0FA1FCBF2B318079007EDDFE /* TreeView.swift */,
 			);
 			path = ShoppingApp;
 			sourceTree = "<group>";
@@ -281,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA1FCC02B318079007EDDFE /* TreeView.swift in Sources */,
 				0FEAE3122B2B5B9000D6581E /* ProductView.swift in Sources */,
 				0FEAE3142B2C778500D6581E /* ProductRowView.swift in Sources */,
 				0FEAE30C2B2B242C00D6581E /* APIManager.swift in Sources */,
